@@ -5,14 +5,14 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Kurti naują konferenciją') }}</div>
+                <div class="card-header">{{ __('messages.create_new_conference') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('admin.conferences.store') }}">
                         @csrf
                         @include('admin.conferences.form')
-                        <button type="submit" class="btn btn-primary">Sukurti</button>
-                        <a href="{{ route('admin.conferences.index') }}" class="btn btn-secondary">Atšaukti</a>
+                        <button type="submit" class="btn btn-primary">{{ __('messages.create') }}</button>
+                        <a href="{{ route('admin.conferences.index') }}" class="btn btn-secondary">{{ __('messages.cancel') }}</a>
                     </form>
                 </div>
             </div>

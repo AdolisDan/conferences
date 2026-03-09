@@ -26,7 +26,7 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('messages.toggle_navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -40,10 +40,10 @@
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
                         <li class="nav-item">
-                            <span class="nav-link">Adolis Daniūnas</span>
+                            <span class="nav-link">{{ __('messages.adolis_daniunas') }}</span>
                         </li>
                         <li class="nav-item">
-                            <button class="btn btn-outline-secondary" disabled>Logout</button>
+                            <button class="btn btn-outline-secondary" disabled>{{ __('messages.logout') }}</button>
                         </li>
                     </ul>
                 </div>
